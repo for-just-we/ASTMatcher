@@ -510,7 +510,7 @@ ViewCFG的输出
 
 CFG图示如下：
 
-![[UseAfterMoveExample.png]]
+![UseAfterMoveExample](UseAfterMoveExample.png)
 
 - CFG中每个结点对应一个 `CFGBlock`，`CFGBlock` 中每一行表达式对应一个 `CFGElem`。
 
