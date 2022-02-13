@@ -3,10 +3,10 @@ project(ASTMatcher)
 
 set(CMAKE_CXX_STANDARD 14)
 
-# ${CMAKE_CURRENT_SOURCE_DIR}: /home/prophe/projects/c/ClangCheckers/StreamChecker
-# ${PROJECT_BINARY_DIR}: /home/prophe/projects/c/ClangCheckers/StreamChecker/cmake-build-debug
+# ${CMAKE_CURRENT_SOURCE_DIR}: /home/xxx/projects/c/ClangCheckers/StreamChecker 
+# ${PROJECT_BINARY_DIR}: /home/xxx/projects/c/ClangCheckers/StreamChecker/cmake-build-debug 
 # ${LLVM_PACKAGE_VERSION}: 12.0.0
-set(LLVM_DIR /home/prophe/programming/llvm-12.0.0.obj/)
+set(LLVM_DIR /home/xxx/programming/llvm-12.0.0.obj/) # change to your LLVM path
 message("yes ${LLVM_DIR}")
 message("yes ${PROJECT_BINARY_DIR}")
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
@@ -85,7 +85,7 @@ target_link_libraries(ASTMatcher
         -Wl,--end-group
 )
 
-# ${CMAKE_CURRENT_BINARY_DIR}: /home/prophe/projects/c/ClangCheckers/StreamChecker/cmake-build-debug
+# ${CMAKE_CURRENT_BINARY_DIR}: /home/xxx/projects/c/ClangCheckers/StreamChecker/cmake-build-debug
 
 
 #target_include_directories(StreamChecker
@@ -107,7 +107,7 @@ install(TARGETS ASTMatcher
         RUNTIME DESTINATION bin
         )
 
-# ${CMAKE_SOURCE_DIR}: /home/prophe/projects/c/ClangCheckers/ASTMatcher
+# ${CMAKE_SOURCE_DIR}: /home/xxx/projects/c/ClangCheckers/ASTMatcher
 include_directories(${CMAKE_SOURCE_DIR}/include)
 link_directories(${LIBRARY_OUTPUT_PATH})
 
